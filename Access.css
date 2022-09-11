@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(126, 126, 208);
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+input{
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+}
+.btn{
+    color: white;
+    width: 300px;
+    /* height: 30px; */
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    outline: none;
+    border-radius: 8px;
+    
+}
+span{
+    color: red;
+}
+
+.navBar{
+    margin-top: 210px;
+}
+.Form-col{
+    margin-top: 100px;
+}
+.outerCircle{
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: -485px;
+    background: conic-gradient( white 120deg, crimson 120deg 180deg,  green 180deg 300deg, rgb(126, 126, 208) 300deg);
+    transform: rotate(115deg);
+    overflow: hidden;
+    
+}
+
+.innerCircle{
+    width: 300px;
+    height: 300px;
+    border: 4px solid goldenrod;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    position: absolute;
+    bottom: 154px;
+    right: 180px;
+    z-index: 11;
+    background-color: white;
+}
+.resetAccess{
+    position: absolute;
+    z-index: 11;
+    right: 300px;
+    color: white;
+}
+.report{
+    position: absolute;
+    z-index: 11;
+    top: 63px;
+    right: 455px;
+    transform: rotate(-60deg);
+    color: white;
+}
+.login{
+    position: absolute;
+    z-index: 11;
+    bottom: 103px;
+    right: 375px;
+    transform: rotate(50deg);
+    color: black;
+
+}
