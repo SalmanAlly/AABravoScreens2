@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     background-color: rgb(126, 126, 208);
+    overflow: hidden;
 }
 ::-webkit-input-placeholder{
     color: white;
@@ -43,7 +44,7 @@ span{
     height: 620px;
     border-radius: 50%;
     position: relative;
-    margin-left: -485px;
+    margin-left: -325px;
     background: conic-gradient( white 120deg, crimson 120deg 180deg,  green 180deg 300deg, rgb(126, 126, 208) 300deg);
     transform: rotate(115deg);
     overflow: hidden;
@@ -63,25 +64,71 @@ span{
     background-color: white;
 }
 .resetAccess{
-    position: absolute;
+    position: relative;
     z-index: 11;
-    right: 300px;
-    color: white;
+    transform: rotate(244deg);
+    right: 158px;
+    top: -259px;
 }
 .report{
-    position: absolute;
+    position: relative;
     z-index: 11;
-    top: 63px;
-    right: 455px;
-    transform: rotate(-60deg);
+    top: -23px;
+    left: -314px;
+    transform: rotate(-170deg);
     color: white;
 }
 .login{
-    position: absolute;
+    position: relative;
     z-index: 11;
-    bottom: 103px;
-    right: 375px;
-    transform: rotate(50deg);
+    bottom: 139px;
+    right: -172px;
+    transform: rotate(-65deg);
     color: black;
 
+}
+
+
+/* Media Queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    body{
+        overflow: visible;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   .outerCircle{
+       width: 550px;
+       height: 550px;
+   }
+   .innerCircle{
+       width: 240px;
+       height: 240px;
+   }
+   .report{
+    top: -22px;
+    left: -255px;
+   }
+   .resetAccess{
+    right: 110px;
+    top: -216px;
+   }
+} 
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   .outerCircle{
+       width: 620px;
+       height: 620px;
+   }
+   .innerCircle{
+       width: 300px;
+       height: 300px;
+   }
 }
